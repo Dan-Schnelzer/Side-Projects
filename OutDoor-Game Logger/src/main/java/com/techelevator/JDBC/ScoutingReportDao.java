@@ -6,11 +6,13 @@ import java.util.List;
 
 public interface ScoutingReportDao {
 
-    ScoutingReport createScoutingReport();
+    ScoutingReport createScoutingReport();           //1S
 
-    List<Integer> getScoutReportIds(int userId);
+    List<Long> getScoutReportIds(long userId);            //2S
 
-    ScoutingReport getScoutingReportById(int reportId);
+    ScoutingReport getScoutingReportById(long reportId);       //3S
 
-    List<ScoutingReport> getScoutingReportByUser(int userId);
+    void deleteScoutReport(long logId);                //4S
+
+    List<ScoutingReport> getScoutingReportByUser(long userId);         //5S
 }

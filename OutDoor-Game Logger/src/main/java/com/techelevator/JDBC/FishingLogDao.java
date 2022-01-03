@@ -6,13 +6,15 @@ import java.util.List;
 
 public interface FishingLogDao {
 
-    FishingLog createFishingLog();
+    FishingLog createFishingLog(FishingLog fishingLog);     //1F
 
-    List<Integer> getLogIds(int userId);
+    List<Long> getLogIds(long userId);               //2F
 
-    FishingLog getFishingLogById(int logId);
+    FishingLog getFishingLogById(long logId);               //3F
 
-    List<FishingLog> getFishingLogsByUser(int userId);
+    void deleteFishingLog(long logId);               //4F
+
+    List<FishingLog> getFishingLogsByUser(long userId);     //5F
 
 
 

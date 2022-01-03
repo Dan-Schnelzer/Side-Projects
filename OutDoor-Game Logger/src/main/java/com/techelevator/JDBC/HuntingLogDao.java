@@ -6,11 +6,13 @@ import java.util.List;
 
 public interface HuntingLogDao {
 
-    HuntingLog createHuntingLog();
+    HuntingLog createHuntingLog(HuntingLog huntingLog);        //1H
 
-    List<Integer> getLogIds(int userId);
+    List<Long> getLogIds(long userId);          //2H
 
-    HuntingLog getHuntingLogById(int logId);
+    HuntingLog getHuntingLogById(long logId);            //3H
 
-    List<HuntingLog> getHuntingLogsByUser(int userId);
+    void deleteHuntingLog(long logId);             //4H
+
+    List<HuntingLog> getHuntingLogsByUser(long userId);        // 5H
 }
