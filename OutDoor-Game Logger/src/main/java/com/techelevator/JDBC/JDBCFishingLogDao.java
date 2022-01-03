@@ -68,6 +68,7 @@ public class JDBCFishingLogDao implements FishingLogDao {
 
     private FishingLog mapResultsToFishingLog(SqlRowSet results){
         FishingLog fishingLog = new FishingLog();
+        fishingLog.setFishLogId(results.getLong("fish_log_id"));
         fishingLog.setUserId(results.getLong("user_id"));
         fishingLog.setLogDate(results.getString("log_date"));
         fishingLog.setLogLocation(results.getString("log_location"));

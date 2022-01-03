@@ -15,6 +15,10 @@ public class FishingLog {
         return fishLogId;
     }
 
+    public void setFishLogId(long fishLogId) {
+        this.fishLogId = fishLogId;
+    }
+
     public long getUserId() {
         return userId;
     }

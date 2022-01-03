@@ -15,6 +15,10 @@ public class HuntingLog {
         return huntLogId;
     }
 
+    public void setHuntLogId(long huntLogId) {
+        this.huntLogId = huntLogId;
+    }
+
     public long getUserId() {
         return userId;
     }

@@ -13,6 +13,10 @@ public class ScoutingReport {
         return scoutReportID;
     }
 
+    public void setScoutReportID(long scoutReportID) {
+        this.scoutReportID = scoutReportID;
+    }
+
     public long getUserID() {
         return userID;
     }

@@ -66,6 +66,7 @@ public class JDBCHuntingLogDao implements HuntingLogDao{
 
     private HuntingLog mapResultsToHutingLog(SqlRowSet results){
         HuntingLog huntingLog = new HuntingLog();
+        huntingLog.setHuntLogId(results.getLong("hunt_log_id"));
         huntingLog.setUserId(results.getLong("user_id"));
         huntingLog.setLogDate(results.getString("log_date"));
         huntingLog.setLogLocation(results.getString("log_location"));
