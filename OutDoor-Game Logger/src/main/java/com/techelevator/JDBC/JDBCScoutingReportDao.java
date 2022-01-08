@@ -76,5 +76,5 @@ public class JDBCScoutingReportDao implements ScoutingReportDao{
         scoutingReport.setWeather(results.getString("weather"));
         scoutingReport.setScoutDescription(results.getString("scout_description"));
         return scoutingReport;
-    }
+    }     // this is just a helper method  **********
 }

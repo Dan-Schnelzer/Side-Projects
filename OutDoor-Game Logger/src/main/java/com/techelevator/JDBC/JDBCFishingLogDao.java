@@ -78,5 +78,5 @@ public class JDBCFishingLogDao implements FishingLogDao {
         fishingLog.setWeather(results.getString("weather"));
         fishingLog.setFishingTrip(results.getString("fishing_trip"));
         return fishingLog;
-    }
+    }     // this is just a helper method  **********
 }
